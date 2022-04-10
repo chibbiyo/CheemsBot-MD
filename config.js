@@ -1,4 +1,4 @@
-//═══════[© 2022 Xeon Bot Inc.]════════\\
+//═══════[© 2022 Rei Bot Inc.]════════\\
 
 //~you can re-upload but tag my channel
 //or put my channel link in the description.
@@ -22,16 +22,16 @@ global.APIKeys = {
 }
 
 //═══════[modification]════════\\
-global.owner = ['916909137213','6283839980451'] //owner number, u can put multiple owner number, within quotations and seperated by comma.
-global.pemilik = ['916909137213'] //another owner number
-global.premium = ['916909137213'] //premium number
-global.pengguna = 'Xeon' //username
-global.botnma = 'Cheems Bot-MD' //bot name
-global.ownernma = '🦄Dream Guy Xeon' //owner name
-global.packname = 'Cheems Bot' //sticker package name
-global.author = 'By Dream Guy Xeon' //sticker author name
+global.owner = ['212655892921','212655892921'] //owner number, u can put multiple owner number, within quotations and seperated by comma.
+global.pemilik = ['212655892921'] //another owner number
+global.premium = ['212655892921'] //premium number
+global.pengguna = 'chibbiyo' //username
+global.botnma = 'Rei-Bot' //bot name
+global.ownernma = 'sam' //owner name
+global.packname = 'Rei Bot' //sticker package name
+global.author = 'By sam' //sticker author name
 global.sessionName = 'session' //session name
-global.prefa = ['#','!','/',''] //prefix
+global.prefa = ['#',''] //prefix
 global.sp = '⭔' //design
 global.mess = {
     success: 'Done ✓',
