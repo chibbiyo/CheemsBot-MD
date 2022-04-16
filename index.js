@@ -96,11 +96,11 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 Description: ${metadata.desc}
 
-Welcome To Our group`} )
+Welcome to the group (●’◡’●)ﾉ`} )
                 } else if (anu.action == 'remove') {
                     XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Left ${metadata.subject}
 
-we probably not gonna miss u` })
+we're probably not gonna miss u (ง'̀-'́)ง` })
                 }
             }
         } catch (err) {
