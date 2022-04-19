@@ -104,7 +104,7 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` This is Bot's Official Number`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "212655892921"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` This is Bot's Official Owner Number`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "212655892921"}}}, { quoted: m})
         }
 try {
             let isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -590,7 +590,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             break
 	    case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/212655892921\nMy paypal : paypal.me/ilovebigboobsman (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n⭔ Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a1fa43a3bef4dbaf33f88.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/212655892921\nMy paypal : paypal.me/ilovebigboobsman (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://telegra.ph/file/a1fa43a3bef4dbaf33f88.jpg\n⭔ Paytm : https://telegra.ph/file/a1fa43a3bef4dbaf33f88.jpg` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
@@ -823,16 +823,16 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'block': {
+        case 'ban': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.updateBlockStatus(users, 'ban').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'unblock': {
+        case 'unban': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.updateBlockStatus(users, 'unban').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	    case 'setname': case 'setsubject': {
@@ -2374,9 +2374,9 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break 
-case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'cheems': case 'doge':{
+case 'tes': case 'test': case 'alive': case 'bot': case 'rei': case 'reii': case 'sam':{
                 anu = `Hi ${pushname}
-Rei Bot With You Forever!!🍂🤚`
+Rei Bot With You Forever!!🍂`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
@@ -2427,8 +2427,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./XeonMedia/cheemspic.jpg')},
-                            hydratedFooterText: `Hi 🤚 ${pushname}
-How Are You? 😊
+                            hydratedFooterText: `Hi 𖠌 ${pushname}
+How Are You? 𖠌
 
 
 ❏「 INFO BOT 」
@@ -2447,12 +2447,12 @@ Please Select Button Below
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/imFIX-Wrt3s'
+                                    url: 'https://youtu.be/???'
                                 }
                             }, {
                             	urlButton: {
                                 displayText: 'Script🔖',
-                                    url: 'https://github.com/DGXeon/CheemsBot-MD'
+                                    url: 'https://github.com/chibbiyo/CheemsBot-MD'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2595,17 +2595,17 @@ case 'grupmenu': {
 	            anu = `
   *Group Menu*
   
-  ➙ ${prefix}grouplink
-  ➙ ${prefix}ephemeral [option]
-  ➙ ${prefix}setgrouppp
-  ➙ ${prefix}setname [text]
-  ➙ ${prefix}group [option]
-  ➙ ${prefix}editinfo [option]
-  ➙ ${prefix}grupinfo
-  ➙ ${prefix}add @user
-  ➙ ${prefix}kick @user
-  ➙ ${prefix}promote @user
-  ➙ ${prefix}demote @user
+  ☁︎ ${prefix}grouplink
+  ☁︎ ${prefix}ephemeral [option]
+  ☁︎ ${prefix}setgrouppp
+  ☁︎ ${prefix}setname [text]
+  ☁︎ ${prefix}group [option]
+  ☁︎ ${prefix}editinfo [option]
+  ☁︎ ${prefix}grupinfo
+  ☁︎ ${prefix}add @user
+  ☁︎ ${prefix}kick @user
+  ☁︎ ${prefix}promote @user
+  ☁︎ ${prefix}demote @user
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2635,19 +2635,19 @@ case 'downloadmenu': {
 	okemenu = `
 	*Downloader Menu*
   
-  ➙ ${prefix}tiktoknowm [url]
-  ➙ ${prefix}tiktokwm [url]
-  ➙ ${prefix}tiktokmp3 [url]
-  ➙ ${prefix}instagram [url]
-  ➙ ${prefix}ig2 [url]
-  ➙ ${prefix}igreels [url]
-  ➙ ${prefix}igtv [url]
-  ➙ ${prefix}twitter [url]
-  ➙ ${prefix}twittermp3 [url]
-  ➙ ${prefix}ytmp3 [url]
-  ➙ ${prefix}ytmp4 [url]
-  ➙ ${prefix}getmusic [query]
-  ➙ ${prefix}getvideo [query
+  ☁︎ ${prefix}tiktoknowm [url]
+  ☁︎ ${prefix}tiktokwm [url]
+  ☁︎ ${prefix}tiktokmp3 [url]
+  ☁︎ ${prefix}instagram [url]
+  ☁︎ ${prefix}ig2 [url]
+  ☁︎ ${prefix}igreels [url]
+  ☁︎ ${prefix}igtv [url]
+  ☁︎ ${prefix}twitter [url]
+  ☁︎ ${prefix}twittermp3 [url]
+  ☁︎ ${prefix}ytmp3 [url]
+  ☁︎ ${prefix}ytmp4 [url]
+  ☁︎ ${prefix}getmusic [query]
+  ☁︎ ${prefix}getvideo [query
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2677,14 +2677,14 @@ case 'downloadmenu': {
             	anu = `
               *Search Menu*
   
-  ➙ ${prefix}play [query]
-  ➙ ${prefix}yts [query]
-  ➙ ${prefix}google [query]
-  ➙ ${prefix}gimage [query]
-  ➙ ${prefix}pinterest [query]
-  ➙ ${prefix}wallpaper [query]
-  ➙ ${prefix}wikimedia [query]
-  ➙ ${prefix}ytsearch [query]
+  ☁︎ ${prefix}play [query]
+  ☁︎ ${prefix}yts [query]
+  ☁︎ ${prefix}google [query]
+  ☁︎ ${prefix}gimage [query]
+  ☁︎ ${prefix}pinterest [query]
+  ☁︎ ${prefix}wallpaper [query]
+  ☁︎ ${prefix}wikimedia [query]
+  ☁︎ ${prefix}ytsearch [query]
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2714,8 +2714,8 @@ case 'randommenu': {
 	anu = `
 	*Random Menu*
   
-  ➙ ${prefix}coffee
-  ➙ ${prefix}couplepp
+  ☁︎ ${prefix}coffee
+  ☁︎ ${prefix}couplepp
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2745,9 +2745,9 @@ case 'funmenu': {
 	anu = `
 	*Fun Menu*
   
-  ➙ ${prefix}couple
-  ➙ ${prefix}mysoulmate
-  ➙ ${prefix}math [mode] 
+  ☁︎ ${prefix}couple
+  ☁︎ ${prefix}mysoulmate
+  ☁︎ ${prefix}math [mode] 
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2777,17 +2777,17 @@ case 'voicemenu': {
 	anu = `
 	*Voice Changer Menu*
 	
-  ➙ ${prefix}bass
-  ➙ ${prefix}blown
-  ➙ ${prefix}deep
-  ➙ ${prefix}earrape
-  ➙ ${prefix}fast
-  ➙ ${prefix}fat
-  ➙ ${prefix}nightcore
-  ➙ ${prefix}reverse
-  ➙ ${prefix}robot
-  ➙ ${prefix}slow
-  ➙ ${prefix}squirrel
+  ☁︎ ${prefix}bass
+  ☁︎ ${prefix}blown
+  ☁︎ ${prefix}deep
+  ☁︎ ${prefix}earrape
+  ☁︎ ${prefix}fast
+  ☁︎ ${prefix}fat
+  ☁︎ ${prefix}nightcore
+  ☁︎ ${prefix}reverse
+  ☁︎ ${prefix}robot
+  ☁︎ ${prefix}slow
+  ☁︎ ${prefix}squirrel
 `
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2851,36 +2851,36 @@ case 'horoscopemenukcodk': {
 	anu = `
 	*Horoscope Menu*
   
-  ➙ ${prefix}hockeynumber
-  ➙ ${prefix}dreammeaning
-  ➙ ${prefix}namemeaning
-  ➙ ${prefix}fortunetelling
-  ➙ ${prefix}marriageprediction
-  ➙ ${prefix}wife&husband
-  ➙ ${prefix}fortunetelling2
-  ➙ ${prefix}matchname
-  ➙ ${prefix}couplematch
-  ➙ ${prefix}married
-  ➙ ${prefix}businessnature
-  ➙ ${prefix}sustenance
-  ➙ ${prefix}profession
-  ➙ ${prefix}fate
-  ➙ ${prefix}potentialdisease
-  ➙ ${prefix}tarot
-  ➙ ${prefix}fengshui
-  ➙ ${prefix}goodday
-  ➙ ${prefix}badday
-  ➙ ${prefix}unluckyday
-  ➙ ${prefix}dragonday
-  ➙ ${prefix}sustenance2
-  ➙ ${prefix}luck
-  ➙ ${prefix}weton
-  ➙ ${prefix}character
-  ➙ ${prefix}luck2
-  ➙ ${prefix}fishing
-  ➙ ${prefix}fertiletime
-  ➙ ${prefix}zodiac
-  ➙ ${prefix}shio`
+  ☁︎ ${prefix}hockeynumber
+  ☁︎ ${prefix}dreammeaning
+  ☁︎ ${prefix}namemeaning
+  ☁︎ ${prefix}fortunetelling
+  ☁︎ ${prefix}marriageprediction
+  ☁︎ ${prefix}wife&husband
+  ☁︎ ${prefix}fortunetelling2
+  ☁︎ ${prefix}matchname
+  ☁︎ ${prefix}couplematch
+  ☁︎ ${prefix}married
+  ☁︎ ${prefix}businessnature
+  ☁︎ ${prefix}sustenance
+  ☁︎ ${prefix}profession
+  ☁︎ ${prefix}fate
+  ☁︎ ${prefix}potentialdisease
+  ☁︎ ${prefix}tarot
+  ☁︎ ${prefix}fengshui
+  ☁︎ ${prefix}goodday
+  ☁︎ ${prefix}badday
+  ☁︎ ${prefix}unluckyday
+  ☁︎ ${prefix}dragonday
+  ☁︎ ${prefix}sustenance2
+  ☁︎ ${prefix}luck
+  ☁︎ ${prefix}weton
+  ☁︎ ${prefix}character
+  ☁︎ ${prefix}luck2
+  ☁︎ ${prefix}fishing
+  ☁︎ ${prefix}fertiletime
+  ☁︎ ${prefix}zodiac
+  ☁︎ ${prefix}shio`
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
@@ -2909,15 +2909,15 @@ case 'convertmenu': {
 	anu = `
 	*Convert Menu*
   
-  ➙ ${prefix}toimage
-  ➙ ${prefix}removebg
-  ➙ ${prefix}sticker
-  ➙ ${prefix}emojimix
-  ➙ ${prefix}tovideo
-  ➙ ${prefix}togif
-  ➙ ${prefix}tourl
-  ➙ ${prefix}ebinary
-  ➙ ${prefix}dbinary
+  ☁︎ ${prefix}toimage
+  ☁︎ ${prefix}removebg
+  ☁︎ ${prefix}sticker
+  ☁︎ ${prefix}emojimix
+  ☁︎ ${prefix}tovideo
+  ☁︎ ${prefix}togif
+  ☁︎ ${prefix}tourl
+  ☁︎ ${prefix}ebinary
+  ☁︎ ${prefix}dbinary
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2947,17 +2947,17 @@ case 'nocategorymenu': {
 	anu = `
 	*Misc Menu*
   
-  ➙ ${prefix}ping
-  ➙ ${prefix}owner
-  ➙ ${prefix}donate
-  ➙ ${prefix}menu / ${prefix}help / ${prefix}?
-  ➙ ${prefix}delete
-  ➙ ${prefix}chatinfo
-  ➙ ${prefix}quoted
-  ➙ ${prefix}listpc
-  ➙ ${prefix}listgc
-  ➙ ${prefix}listonline
-  ➙ ${prefix}report (report bug to owner)
+  ☁︎ ${prefix}ping
+  ☁︎ ${prefix}owner
+  ☁︎ ${prefix}donate
+  ☁︎ ${prefix}menu / ${prefix}help / ${prefix}?
+  ☁︎ ${prefix}delete
+  ☁︎ ${prefix}chatinfo
+  ☁︎ ${prefix}quoted
+  ☁︎ ${prefix}listpc
+  ☁︎ ${prefix}listgc
+  ☁︎ ${prefix}listonline
+  ☁︎ ${prefix}report (report bug to owner)
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2987,14 +2987,14 @@ case 'databasemenu': {
 	anu = `
 	*Database Menu*
   
-  ➙ ${prefix}setcmd
-  ➙ ${prefix}listcmd
-  ➙ ${prefix}delcmd
-  ➙ ${prefix}lockcmd
-  ➙ ${prefix}addmsg
-  ➙ ${prefix}listmsg
-  ➙ ${prefix}getmsg
-  ➙ ${prefix}delmsg
+  ☁︎ ${prefix}setcmd
+  ☁︎ ${prefix}listcmd
+  ☁︎ ${prefix}delcmd
+  ☁︎ ${prefix}lockcmd
+  ☁︎ ${prefix}addmsg
+  ☁︎ ${prefix}listmsg
+  ☁︎ ${prefix}getmsg
+  ☁︎ ${prefix}delmsg
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3024,9 +3024,9 @@ case 'anonymouschatmenu': {
 	anu = `
 	*Anonymous Menu*
 	
-  ➙ ${prefix}start ( Start Chat )
-  ➙ ${prefix}next ( Next user )
-  ➙ ${prefix}stop ( stop Anonymous chat )
+  ☁︎ ${prefix}start ( Start Chat )
+  ☁︎ ${prefix}next ( Next user )
+  ☁︎ ${prefix}stop ( stop Anonymous chat )
 	`
 	  const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3056,9 +3056,9 @@ case 'sistemmenu': {
 	anu = `
 	*System Menu*
 	
-  ➙ ${prefix}antilink On/Off
-  ➙ ${prefix}mute On/Off
-  ➙ ${prefix}antiwame On/Off
+  ☁︎ ${prefix}antilink On/Off
+  ☁︎ ${prefix}mute On/Off
+  ☁︎ ${prefix}antiwame On/Off
 `
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3088,14 +3088,14 @@ break
   	anu = `
   *Owner Menu*
   
-  ➙ ${prefix}chat [option]
-  ➙ ${prefix}join [link]
-  ➙ ${prefix}leave
-  ➙ ${prefix}setbotpp
-  ➙ ${prefix}block @user
-  ➙ ${prefix}unblock @user
-  ➙ ${prefix}bcgroup
-  ➙ ${prefix}bcall
+  ☁︎ ${prefix}chat [option]
+  ☁︎ ${prefix}join [link]
+  ☁︎ ${prefix}leave
+  ☁︎ ${prefix}setbotpp
+  ☁︎ ${prefix}block @user
+  ☁︎ ${prefix}unblock @user
+  ☁︎ ${prefix}bcgroup
+  ☁︎ ${prefix}bcall
   `
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3125,119 +3125,119 @@ break
   	anu = `
   *All Menu*
   
-  ꪶ𖠌Group Menu𖠌ꫂ
-  ➙ ${prefix}grouplink
-  ➙ ${prefix}ephemeral [option]
-  ➙ ${prefix}setgrouppp
-  ➙ ${prefix}setname [text]
-  ➙ ${prefix}group [option]
-  ➙ ${prefix}editinfo [option]
-  ➙ ${prefix}grupinfo
-  ➙ ${prefix}add @user
-  ➙ ${prefix}kick @user
-  ➙ ${prefix}promote @user
-  ➙ ${prefix}demote @user
+  𖠌Group Menu𖠌
+  ☃︎ ${prefix}grouplink
+  ☃︎ ${prefix}ephemeral [option]
+  ☃︎ ${prefix}setgrouppp
+  ☃︎ ${prefix}setname [text]
+  ☃︎ ${prefix}group [option]
+  ☃︎ ${prefix}editinfo [option]
+  ☃︎ ${prefix}grupinfo
+  ☃︎ ${prefix}add @user
+  ☃︎ ${prefix}kick @user
+  ☃︎ ${prefix}promote @user
+  ☃︎ ${prefix}demote @user
   
-  ꪶ𖠌Download Menu𖠌ꫂ
-  ➙ ${prefix}tiktoknowm [url]
-  ➙ ${prefix}tiktokwm [url]
-  ➙ ${prefix}tiktokmp3 [url]
-  ➙ ${prefix}instagram [url]
-  ➙ ${prefix}ig2 [url]
-  ➙ ${prefix}igreels [url]
-  ➙ ${prefix}igtv [url]
-  ➙ ${prefix}twitter [url]
-  ➙ ${prefix}twittermp3 [url]
-  ➙ ${prefix}ytmp3 [url]
-  ➙ ${prefix}ytmp4 [url]
-  ➙ ${prefix}getmusic [query]
-  ➙ ${prefix}getvideo [query
+  𖠌Download Menu𖠌
+  ☃︎ ${prefix}tiktoknowm [url]
+  ☃︎ ${prefix}tiktokwm [url]
+  ☃︎ ${prefix}tiktokmp3 [url]
+  ☃︎ ${prefix}instagram [url]
+  ☃︎ ${prefix}ig2 [url]
+  ☃︎ ${prefix}igreels [url]
+  ☃︎ ${prefix}igtv [url]
+  ☃︎ ${prefix}twitter [url]
+  ☃︎ ${prefix}twittermp3 [url]
+  ☃︎ ${prefix}ytmp3 [url]
+  ☃︎ ${prefix}ytmp4 [url]
+  ☃︎ ${prefix}getmusic [query]
+  ☃︎ ${prefix}getvideo [query
   
-  ꪶ𖠌Search Menu𖠌ꫂ
-  ➙ ${prefix}play [query]
-  ➙ ${prefix}yts [query]
-  ➙ ${prefix}google [query]
-  ➙ ${prefix}gimage [query]
-  ➙ ${prefix}pinterest [query]
-  ➙ ${prefix}wallpaper [query]
-  ➙ ${prefix}wikimedia [query]
-  ➙ ${prefix}ytsearch [query]
+  𖠌Search Menu𖠌
+  ☃︎ ${prefix}play [query]
+  ☃︎ ${prefix}yts [query]
+  ☃︎ ${prefix}google [query]
+  ☃︎ ${prefix}gimage [query]
+  ☃︎ ${prefix}pinterest [query]
+  ☃︎ ${prefix}wallpaper [query]
+  ☃︎ ${prefix}wikimedia [query]
+  ☃︎ ${prefix}ytsearch [query]
   
-  ꪶ𖠌Random Menu𖠌ꫂ
-  ➙ ${prefix}coffee
-  ➙ ${prefix}couplepp
+  𖠌Random Menu𖠌
+  ☃︎ ${prefix}coffee
+  ☃︎ ${prefix}couplepp
   
-  ꪶ𖠌Fun Menu𖠌ꫂ
-  ➙ ${prefix}couple
-  ➙ ${prefix}mysoulmate
-  ➙ ${prefix}math [mode]  
+  𖠌Fun Menu𖠌
+  ☃︎ ${prefix}couple
+  ☃︎ ${prefix}mysoulmate
+  ☃︎ ${prefix}math [mode]  
   
-  ꪶ𖠌Voice Changer Menu𖠌ꫂ
-  ➙ ${prefix}bass
-  ➙ ${prefix}blown
-  ➙ ${prefix}deep
-  ➙ ${prefix}earrape
-  ➙ ${prefix}fast
-  ➙ ${prefix}fat
-  ➙ ${prefix}nightcore
-  ➙ ${prefix}reverse
-  ➙ ${prefix}robot
-  ➙ ${prefix}slow
-  ➙ ${prefix}squirrel
+  𖠌Voice Changer Menu𖠌
+  ☃︎ ${prefix}bass
+  ☃︎ ${prefix}blown
+  ☃︎ ${prefix}deep
+  ☃︎ ${prefix}earrape
+  ☃︎ ${prefix}fast
+  ☃︎ ${prefix}fat
+  ☃︎ ${prefix}nightcore
+  ☃︎ ${prefix}reverse
+  ☃︎ ${prefix}robot
+  ☃︎ ${prefix}slow
+  ☃︎ ${prefix}squirrel
    
-  ꪶ𖠌Convert Menu𖠌ꫂ
-  ➙ ${prefix}toimage
-  ➙ ${prefix}removebg
-  ➙ ${prefix}sticker
-  ➙ ${prefix}emojimix
-  ➙ ${prefix}tovideo
-  ➙ ${prefix}togif
-  ➙ ${prefix}tourl
-  ➙ ${prefix}ebinary
-  ➙ ${prefix}dbinary
+  𖠌Convert Menu𖠌
+  ☃︎ ${prefix}toimage
+  ☃︎ ${prefix}removebg
+  ☃︎ ${prefix}sticker
+  ☃︎ ${prefix}emojimix
+  ☃︎ ${prefix}tovideo
+  ☃︎ ${prefix}togif
+  ☃︎ ${prefix}tourl
+  ☃︎ ${prefix}ebinary
+  ☃︎ ${prefix}dbinary
   
-  ꪶ𖠌Misc Menu𖠌ꫂ
-  ➙ ${prefix}ping
-  ➙ ${prefix}owner
-  ➙ ${prefix}donate
-  ➙ ${prefix}menu / ${prefix}help / ${prefix}?
-  ➙ ${prefix}delete
-  ➙ ${prefix}chatinfo
-  ➙ ${prefix}quoted
-  ➙ ${prefix}listpc
-  ➙ ${prefix}listgc
-  ➙ ${prefix}listonline
-  ➙ ${prefix}report (report bug to owner)
+  𖠌Misc Menu𖠌
+  ☃︎ ${prefix}ping
+  ☃︎ ${prefix}owner
+  ☃︎ ${prefix}donate
+  ☃︎ ${prefix}menu / ${prefix}help / ${prefix}?
+  ☃︎ ${prefix}delete
+  ☃︎ ${prefix}chatinfo
+  ☃︎ ${prefix}quoted
+  ☃︎ ${prefix}listpc
+  ☃︎ ${prefix}listgc
+  ☃︎ ${prefix}listonline
+  ☃︎ ${prefix}report (report bug to owner)
   
-  ꪶ𖠌Database Menu𖠌ꫂ
-  ➙ ${prefix}setcmd
-  ➙ ${prefix}listcmd
-  ➙ ${prefix}delcmd
-  ➙ ${prefix}lockcmd
-  ➙ ${prefix}addmsg
-  ➙ ${prefix}listmsg
-  ➙ ${prefix}getmsg
-  ➙ ${prefix}delmsg
+  𖠌Database Menu𖠌
+  ☃︎ ${prefix}setcmd
+  ☃︎ ${prefix}listcmd
+  ☃︎ ${prefix}delcmd
+  ☃︎ ${prefix}lockcmd
+  ☃︎ ${prefix}addmsg
+  ☃︎ ${prefix}listmsg
+  ☃︎ ${prefix}getmsg
+  ☃︎ ${prefix}delmsg
   
-  ꪶ𖠌Anonymous Menu𖠌ꫂ
-  ➙ ${prefix}start ( Start Chat )
-  ➙ ${prefix}next ( Next user )
-  ➙ ${prefix}stop ( stop Anonymous chat )
+  𖠌Anonymous Menu𖠌
+  ☃︎ ${prefix}start ( Start Chat )
+  ☃︎ ${prefix}next ( Next user )
+  ☃︎ ${prefix}stop ( stop Anonymous chat )
   
-  ꪶ𖠌System Menu𖠌ꫂ
-  ➙ ${prefix}antilink On/Off
-  ➙ ${prefix}mute On/Off
-  ➙ ${prefix}antiwame On/Off
+  𖠌System Menu𖠌
+  ☃︎ ${prefix}antilink On/Off
+  ☃︎ ${prefix}mute On/Off
+  ☃︎ ${prefix}antiwame On/Off
   
-  ꪶ𖠌Owner Menu𖠌ꫂ
-  ➙ ${prefix}chat [option]
-  ➙ ${prefix}join [link]
-  ➙ ${prefix}leave
-  ➙ ${prefix}setbotpp
-  ➙ ${prefix}ban @user
-  ➙ ${prefix}unban @user
-  ➙ ${prefix}bcgroup
-  ➙ ${prefix}bcall`
+  𖠌Owner Menu𖠌
+  ☃︎ ${prefix}chat [option]
+  ☃︎ ${prefix}join [link]
+  ☃︎ ${prefix}leave
+  ☃︎ ${prefix}setbotpp
+  ☃︎ ${prefix}ban @user
+  ☃︎ ${prefix}unban @user
+  ☃︎ ${prefix}bcgroup
+  ☃︎ ${prefix}bcall`
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
@@ -3264,10 +3264,10 @@ break
 break
 case 'tqtt': 
 reply(`Thanks to
-LORD BUDDHA
-Xeon (Me)
+Allah
+sam (Me)
 My family
-And all friends who helped assemble this sexy script !!!`)
+And all friends who helped assemble this sexy script ฅ^•ﻌ•^ฅ !!!`)
 break
             default:
                 if (budy.startsWith('=>')) {
