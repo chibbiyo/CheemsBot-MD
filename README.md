@@ -47,7 +47,7 @@ Scan qr code from the above button, u can pay through GooglePay, Paytm, PhonePe 
 ## ```Bot Support Groups```
 
 - [`SOON`]()
-- [`2nd GC`]()
+- [`SOON`]()
 
 # Setup For Deployment 👇
 
