@@ -6,12 +6,14 @@ on:
   pull_request:
     branches: [master]
 
+permissions: write-all
+
 env:
   Branches: master
   MainBranch: master
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm start
-  BuildCommand: npm install
+  InstallCommand: npm install
+  BuildCommand: npm start
   Output: ./
 
 jobs:
