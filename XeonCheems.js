@@ -1210,7 +1210,7 @@ case 'antilink':
                     let btn = [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://github.com/chibbiyo/CheemsBot-MD'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 callButton: {
@@ -2387,7 +2387,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                             	urlButton: {
@@ -2447,7 +2447,7 @@ Please Select Button Below
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                             	urlButton: {
@@ -2617,7 +2617,7 @@ case 'grupmenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2659,7 +2659,7 @@ case 'downloadmenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2696,7 +2696,7 @@ case 'downloadmenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2727,7 +2727,7 @@ case 'randommenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2759,7 +2759,7 @@ case 'funmenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2799,7 +2799,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2833,7 +2833,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2891,7 +2891,7 @@ case 'horoscopemenukcodk': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2929,7 +2929,7 @@ case 'convertmenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'YouTube📍',
-                                    url: 'https://youtu.be/???'
+                                    url: 'https://youtube.com/channel/UCrCnLKYk-hVzn74DstKjbeQ'
                                 }
                             }, {
                                 quickReplyButton: {
