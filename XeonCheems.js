@@ -823,16 +823,16 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'ban': {
+        case 'block': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.updateBlockStatus(users, 'ban').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'unban': {
+        case 'unblock': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.updateBlockStatus(users, 'unban').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	    case 'setname': case 'setsubject': {
